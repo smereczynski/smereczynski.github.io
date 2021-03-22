@@ -10,8 +10,8 @@
     },
     "items": [
         {
-            "id": "https://smerek.blog/hello-world.html",
-            "url": "https://smerek.blog/hello-world.html",
+            "id": "https://smerek.blog/hello-world/",
+            "url": "https://smerek.blog/hello-world/",
             "title": "Hello World!",
             "summary": "Dzień dobry :)",
             "content_html": "<p>Dzień dobry :)</p>",
