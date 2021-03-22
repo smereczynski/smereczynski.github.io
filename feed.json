@@ -9,5 +9,19 @@
         "name": "Michał Smereczyński"
     },
     "items": [
+        {
+            "id": "https://smerek.blog/hello-world.html",
+            "url": "https://smerek.blog/hello-world.html",
+            "title": "Hello World!",
+            "summary": "Dzień dobry :)",
+            "content_html": "<p>Dzień dobry :)</p>",
+            "author": {
+                "name": "Michał Smereczyński"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-03-22T20:11:52+01:00",
+            "date_modified": "2021-03-22T20:11:52+01:00"
+        }
     ]
 }

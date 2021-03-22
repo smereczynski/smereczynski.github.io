@@ -3,10 +3,30 @@
     <title>Smerek.Blog</title>
     <link href="https://smerek.blog/feed.xml" rel="self" />
     <link href="https://smerek.blog" />
-    <updated>1970-01-01T01:00:00+01:00</updated>
+    <updated>2021-03-22T20:11:52+01:00</updated>
     <author>
         <name>Michał Smereczyński</name>
     </author>
     <id>https://smerek.blog</id>
 
+    <entry>
+        <title>Hello World!</title>
+        <author>
+            <name>Michał Smereczyński</name>
+        </author>
+        <link href="https://smerek.blog/hello-world.html"/>
+        <id>https://smerek.blog/hello-world.html</id>
+
+        <updated>2021-03-22T20:11:52+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Dzień dobry :)
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Dzień dobry :)</p>
+            ]]>
+        </content>
+    </entry>
 </feed>
