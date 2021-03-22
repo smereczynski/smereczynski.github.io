@@ -1,0 +1,27 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Smerek.Blog",
+    "description": "",
+    "home_page_url": "https://smerek.blog",
+    "feed_url": "https://smerek.blog/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Michał Smereczyński"
+    },
+    "items": [
+        {
+            "id": "https://smerek.blog/test.html",
+            "url": "https://smerek.blog/test.html",
+            "title": "Test",
+            "summary": "Siema",
+            "content_html": "<p>Siema</p>",
+            "author": {
+                "name": "Michał Smereczyński"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-03-21T15:05:26+01:00",
+            "date_modified": "2021-03-21T15:05:26+01:00"
+        }
+    ]
+}

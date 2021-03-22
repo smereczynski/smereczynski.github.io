@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Smerek.Blog</title>
+    <link href="https://smerek.blog/feed.xml" rel="self" />
+    <link href="https://smerek.blog" />
+    <updated>2021-03-21T15:05:26+01:00</updated>
+    <author>
+        <name>Michał Smereczyński</name>
+    </author>
+    <id>https://smerek.blog</id>
+
+    <entry>
+        <title>Test</title>
+        <author>
+            <name>Michał Smereczyński</name>
+        </author>
+        <link href="https://smerek.blog/test.html"/>
+        <id>https://smerek.blog/test.html</id>
+
+        <updated>2021-03-21T15:05:26+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Siema
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Siema</p>
+            ]]>
+        </content>
+    </entry>
+</feed>
