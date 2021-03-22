@@ -3,50 +3,10 @@
     <title>Smerek.Blog</title>
     <link href="https://smerek.blog/feed.xml" rel="self" />
     <link href="https://smerek.blog" />
-    <updated>2021-03-22T19:44:29+01:00</updated>
+    <updated>1970-01-01T01:00:00+01:00</updated>
     <author>
         <name>Michał Smereczyński</name>
     </author>
     <id>https://smerek.blog</id>
 
-    <entry>
-        <title>new</title>
-        <author>
-            <name>Michał Smereczyński</name>
-        </author>
-        <link href="https://smerek.blog/new.html"/>
-        <id>https://smerek.blog/new.html</id>
-
-        <updated>2021-03-22T19:44:29+01:00</updated>
-            <summary>
-                <![CDATA[
-                    yo
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>yo</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Test</title>
-        <author>
-            <name>Michał Smereczyński</name>
-        </author>
-        <link href="https://smerek.blog/test.html"/>
-        <id>https://smerek.blog/test.html</id>
-
-        <updated>2021-03-21T15:05:26+01:00</updated>
-            <summary>
-                <![CDATA[
-                    Siema
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Siema</p>
-            ]]>
-        </content>
-    </entry>
 </feed>
