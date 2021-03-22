@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://smerek.blog/new.html",
+            "url": "https://smerek.blog/new.html",
+            "title": "new",
+            "summary": "yo",
+            "content_html": "<p>yo</p>",
+            "author": {
+                "name": "Michał Smereczyński"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-03-22T19:44:29+01:00",
+            "date_modified": "2021-03-22T19:44:29+01:00"
+        },
+        {
             "id": "https://smerek.blog/test.html",
             "url": "https://smerek.blog/test.html",
             "title": "Test",
