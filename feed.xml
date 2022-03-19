@@ -3,7 +3,7 @@
     <title>Smerek.Blog</title>
     <link href="https://smerek.blog/feed.xml" rel="self" />
     <link href="https://smerek.blog" />
-    <updated>2022-03-19T23:06:58+01:00</updated>
+    <updated>2022-03-19T23:08:23+01:00</updated>
     <author>
         <name>Michał Smereczyński</name>
     </author>
@@ -20,7 +20,7 @@
             <category term="Data"/>
             <category term="Azure"/>
 
-        <updated>2022-03-19T23:06:58+01:00</updated>
+        <updated>2022-03-19T23:08:23+01:00</updated>
             <summary>
                 <![CDATA[
                     <p>Aktualna sytuacja geopolityczna, a konkretnie mówiąc wojna, sprawiła, że jedna z cech chmury publicznej, która do 24.02.2022 roku była uważana za jeden z głównych minusów, właśnie zaczęła być rozpatrywana przez firmy i instytucje jako najlepsza opcja zabezpieczenia. Nie chodzi tu o migrację serwerów/systemów/aplikacji do chmury - na to potrzeba względnie dużo czasu (ocena wynika z doświadczenia). Chodzi o zabezpieczenie danych strategicznych - czymkolwiek nie są dla firmy czy instytucji. Mogą to być dane handlowe, analityczne, matematyczne, geosejsmiczne, kosmiczne. Mogą to być dane historyczne, ale i dane kreujące przyszłość firmy (lub jedno i drugie, rzecz jasna). Różne mogą być też wolumeny tych danych (od kilobajtów do petabajtów) i dynamika ich zmian (od tych, które zmieniają się codziennie, do tych które zmieniają się kwartalnie czy rocznie). Łączy je jedna cecha - jeśli zostaną utracone lub przejęte (a ten scenariusz może być często gorszy niż utrata) to daleko idące problemy mogą być nie tylko personalne czy biznesowe ale mogą dotykać całych gałęzi gospodarki, a nawet wpływać na losy państwa.<br>Przez zabezpieczenie danych mam na myśli zmianę rezydencji tych danych (oryginałów lub kopii) z lokalnej infrastruktury (to znaczy umiejscowionej w Polsce, w siedzibie firmy lub współdzielonym centrum danych) na lokalizacje oddalone na tyle, aby lokalna sytuacja geopolityczna nie wpływała na ich bezpieczeństwo. Oczywiście istnieje wiele scenariuszy, które są odpowiedzią na tę potrzebę i nie wszystkie opierają się o infrastrukturę chmury publicznej. Chmura publiczna cechuje się tym, że od ponad dekady jest gotowa na takie scenariusze i z myślą o nich była budowana.</p>
@@ -82,7 +82,7 @@
 <li>Dostęp oparty o Role-Based Access Control - role przypisywane konkretnym użītkownikom w kontekście konkretnych kont magazynu</li>
 </ol>
 <p>Oba modele pozwalają na operowanie poświadczeniami bezpośrednio ale i operowanie pośrednie za pomocą tak zwanych Shared Access Signatires - odnośników generowanych na żądanie wraz z parametrami, takimi jak data ważności odnośnika, filtr IP i możliwe do wykonania operacje (odczyt, zapis, usunięcie).</p>
-<h3>Wasrtwa sieci</h3>
+<h3>Warstwa sieci</h3>
 <p>Dostęp do kont magazynu na platformie Microsoft Azure może być realizowany przez publiczne łącza internetowe zabezpieczone TLS, ale są też opcje prywatnego dostępu. Pierwszą z nich jest klasyczny VPN - S2S IPSec lub P2S IPSec/OpenVPN - oraz funkcjonalność Private Endpoint dla usługi Azure Storage.</p>
 <p>Drugą opcją jest dzierżawione, dedykowane łącze telekomunikacyjne z wybranym georegionem lub konkretnym regionem Azure - zestawiane przez operatora telekomunikacyjnego z wybranej przez klienta lokalizacji. Łącze to może być w warstwie 1, 2 lub 3 modelu OSI (w zależności gdzie i jak hostuje się klient), a nawet może być realizowane satelitarnie i przez infrastrukturę 5G. Usługa ta pozwala nie tylko na skorzystanie z kont magazynu po prywatnej adresacji (co jest funkcją dodatkową Azure Storage), ale także pozwala na prywatny routing do publicznych endpointów usługi. Usługa, która pozwala realizować taki scenariusz to Azure ExpressRoute.</p>
 <p><img loading="lazy" src="https://docs.microsoft.com/en-au/azure/expressroute/media/expressroute-introduction/expressroute-connection-overview.png" data-is-external-image="true"  alt="ExpressRoute connection overview"></p>
