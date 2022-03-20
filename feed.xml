@@ -3,7 +3,7 @@
     <title>Smerek.Blog</title>
     <link href="https://smerek.blog/feed.xml" rel="self" />
     <link href="https://smerek.blog" />
-    <updated>2022-03-20T14:11:22+01:00</updated>
+    <updated>2022-03-20T14:24:13+01:00</updated>
     <author>
         <name>Michał Smereczyński</name>
     </author>
@@ -20,7 +20,7 @@
             <category term="Data"/>
             <category term="Azure"/>
 
-        <updated>2022-03-20T14:11:22+01:00</updated>
+        <updated>2022-03-20T14:24:13+01:00</updated>
             <summary>
                 <![CDATA[
                     <p>Aktualna sytuacja geopolityczna, a konkretnie mówiąc wojna, sprawiła, że jedna z cech chmury publicznej, która do 24.02.2022 roku była uważana za jeden z głównych minusów, właśnie zaczęła być rozpatrywana przez firmy i instytucje jako najlepsza opcja zabezpieczenia. Nie chodzi tu o migrację serwerów/systemów/aplikacji do chmury - na to potrzeba względnie dużo czasu (ocena wynika z doświadczenia). Chodzi o zabezpieczenie danych strategicznych - czymkolwiek nie są dla firmy czy instytucji. Mogą to być dane handlowe, analityczne, matematyczne, geosejsmiczne, kosmiczne. Mogą to być dane historyczne, ale i dane kreujące przyszłość firmy (lub jedno i drugie, rzecz jasna). Różne mogą być też wolumeny tych danych (od kilobajtów do petabajtów) i dynamika ich zmian (od tych, które zmieniają się codziennie, do tych które zmieniają się kwartalnie czy rocznie). Łączy je jedna cecha - jeśli zostaną utracone lub przejęte (a ten scenariusz może być często gorszy niż utrata) to daleko idące problemy mogą być nie tylko personalne czy biznesowe ale mogą dotykać całych gałęzi gospodarki, a nawet wpływać na losy państwa.<br>Przez zabezpieczenie danych mam na myśli zmianę rezydencji tych danych (oryginałów lub kopii) z lokalnej infrastruktury (to znaczy umiejscowionej w Polsce, w siedzibie firmy lub współdzielonym centrum danych) na lokalizacje oddalone na tyle, aby lokalna sytuacja geopolityczna nie wpływała na ich bezpieczeństwo. Oczywiście istnieje wiele scenariuszy, które są odpowiedzią na tę potrzebę i nie wszystkie opierają się o infrastrukturę chmury publicznej. Chmura publiczna cechuje się tym, że od ponad dekady jest gotowa na takie scenariusze i z myślą o nich była budowana.</p>
@@ -63,7 +63,7 @@
 <li>Po stronie serwera - usługa (szyfrowanie w usłudze przechowującej)</li>
 <li>Po stronie serwera - infrastruktura (szyfrowanie w warstwie sprzętowej po stronie serwera)</li>
 </ol>
-<p>Azure Storage oferuje, jako usżługa, dwie z trzech opcji - szyfrowanie wszystkich danych:</p>
+<p>Azure Storage oferuje, jako usługa, dwie z trzech opcji - szyfrowanie wszystkich danych:</p>
 <ul>
 <li>W spoczynku AES 256 bit (zgodne z FIPS 140-2)</li>
 <li>W warstwie infrastruktury AES 256 (zgodne z FIPS 140-2)</li>
@@ -89,7 +89,7 @@
 <h2>Logowanie</h2>
 <p>Usługa Azure Storage potrafi odkładać logi nie tylko diagnostyczne, dotyczące działania usługi, ale także logi analityczne, dotyczące operacji wykonywane na usłudze - wywołania zakończone sukcesem i niepowodzeniem oraz szczegóły operacyjne tych wywołań. Oznacza to, że usługa jest audytowalna.</p>
 <h2>Próg wejścia - konfiguracja wstępna</h2>
-<p>To jest obszar w którym Azure pokazuje szczególny uzysk. Funkcjonalności opisane powyżej budują przekonanie o zasadności użycia, a prostota wdrożenia tego rozwiązania tylko dopełnia procesu decyzyjnego. Utworzenie konta magazynu to jedno wywołanie do API - oczywiście można je wykonać z apomocą wielu narzędzi, ale w czystej formie ukazuje jak niski jest próg wejścia:</p>
+<p>To jest obszar w którym Azure pokazuje szczególny uzysk. Funkcjonalności opisane powyżej budują przekonanie o zasadności użycia, a prostota wdrożenia tego rozwiązania tylko dopełnia procesu decyzyjnego. Utworzenie konta magazynu to jedno wywołanie do API - oczywiście można je wykonać za pomocą wielu narzędzi, ale w czystej formie ukazuje jak niski jest próg wejścia:</p>
 <p><code>PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}?api-version=2018-02-01</code></p>
 <p><code>{ <span class="hljs-attr">"sku"</span>: { <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Standard_RAGZRS"</span> }, <span class="hljs-attr">"kind"</span>: <span class="hljs-string">"StorageV2"</span>, <span class="hljs-attr">"location"</span>: <span class="hljs-string">"westeurope"</span>, }</code></p>
 <h2>Lokalizacja</h2>
